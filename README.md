@@ -20,9 +20,9 @@ from pdfdoc import process_pdf, process_bytes, process_folder, PipelineConfig, D
 ```python
 from pdfdoc import process_pdf, PipelineConfig
 
-doc = process_pdf("docs/file.pdf")                                   # JSON сохранится рядом с PDF
-doc = process_pdf("docs/file.pdf", save=False)                       # без записи JSON
-doc = process_pdf("docs/file.pdf", PipelineConfig(output_dir="out")) # JSON в папку out/
+doc = process_pdf("docs/file.pdf")                                   
+doc = process_pdf("docs/file.pdf", save=False)                       
+doc = process_pdf("docs/file.pdf", PipelineConfig(output_dir="out")) 
 ```
 
 Повторный вызов на том же файле берёт готовый JSON (если совпадают хеш файла и версия пайплайна).
@@ -30,17 +30,17 @@ doc = process_pdf("docs/file.pdf", PipelineConfig(output_dir="out")) # JSON в �
 
 
 ```python
-for t in doc.tables():                    # все таблицы (или doc.tables(page=1))
-    print(t.page, t.table_cells)          # матрица ячеек: list[list[str]]
-    print(t.table_md, t.html)             # то же в markdown / HTML с объединениями
-    print(t.table_cell_confidence)        # уверенность по ячейкам (для сканов)
+for t in doc.tables():                    
+    print(t.page, t.table_cells)          
+    print(t.table_md, t.html)             
+    print(t.table_cell_confidence)        
 
-text = doc.full_text()                    # весь текст документа
-blocks = doc.page_blocks(1)               # блоки страницы 1
-heads = doc.blocks_of_type("header")      # блоки нужного типа
-for b in doc.low_confidence(0.7):         # что стоит проверить вручную
+text = doc.full_text()                   
+blocks = doc.page_blocks(1)              
+heads = doc.blocks_of_type("header")      
+for b in doc.low_confidence(0.7):         
     print(b.block_id, b.as_text())
-print(doc.warnings)                       # предупреждения пайплайна
+print(doc.warnings)                     
 ```
 
 ## Готовый результат без повторной обработки
@@ -48,9 +48,9 @@ print(doc.warnings)                       # предупреждения пай�
 ```python
 from pdfdoc import Document
 
-doc = Document.load("docs/file.json")            # из файла
-json_str = doc.to_json()                         # в строку (БД, API)
-doc = Document.model_validate_json(json_str)     # из строки
+doc = Document.load("docs/file.json")           
+json_str = doc.to_json()                         
+doc = Document.model_validate_json(json_str)     
 ```
 
 ## Из памяти (загрузка по HTTP и т. п.)
@@ -63,13 +63,11 @@ doc = process_bytes(uploaded_bytes, "upload.pdf")   # JSON не сохраняе
 
 ## Папка целиком
 
-`process_folder` запускает несколько процессов, поэтому нужен `if __name__ == "__main__":`.
-
 ```python
 from pdfdoc import process_folder
 
 if __name__ == "__main__":
-    report = process_folder("/data/docs", workers=8)   # JSON рядом с каждым PDF
+    report = process_folder("/data/docs", workers=8) 
     print(report.processed, report.skipped, report.failed)
 ```
 
@@ -80,8 +78,8 @@ from pdfdoc import process_pdf, PdfOpenError, TesseractNotAvailableError
 
 try:
     doc = process_pdf(path)
-except PdfOpenError:                 # битый / зашифрованный / не PDF
+except PdfOpenError:
     ...
-except TesseractNotAvailableError:   # для скана не найден Tesseract или язык rus
+except TesseractNotAvailableError:
     ...
 ```
