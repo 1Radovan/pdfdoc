@@ -1,0 +1,83 @@
+{
+"file_name": "vedomost_2025_01.pdf",
+"file_hash": "a3f5c8e1b2d4f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1",
+"total_pages": 2,
+"pipeline_version": "0.3.1",
+"processing_time_ms": 4820,
+"warnings": [
+"page 2: OCR confidence below 0.7 on signature block",
+"page 1: table column 3 has 2 empty cells"
+],
+"blocks": [
+{
+"page": 1,
+"block_id": "p1_b01",
+"type": "header",
+"bbox": [72.0, 50.0, 523.0, 85.0],
+"text": "ВЕДОМОСТЬ начисления заработной платы за январь 2025 г.",
+"table_md": null,
+"table_cells": null,
+"html": null,
+"confidence": 0.98,
+"source": "text_layer",
+"language": "ru"
+},
+{
+"page": 1,
+"block_id": "p1_b02",
+"type": "text",
+"bbox": [72.0, 95.0, 523.0, 130.0],
+"text": "Организация: ООО \"Ромашка\", ИНН 7701234567, КПП 770101001",
+"table_md": null,
+"table_cells": null,
+"html": null,
+"confidence": 0.99,
+"source": "text_layer",
+"language": "ru"
+},
+{
+"page": 1,
+"block_id": "p1_b03",
+"type": "table",
+"bbox": [72.0, 140.0, 523.0, 420.0],
+"text": null,
+"table_md": "| № | ФИО | ИНН | Должность | Сумма |\n|---|-----|-----|-----------|-------|\n| 1 | Иванов И.И. | 770123456701 | Менеджер | 1000.00 |\n| 2 | Петров П.П. | 770123456702 | Бухгалтер | 2000.00 |\n| 3 | Сидоров С.С. | 770123456703 | Инженер | 1500.00 |",
+"table_cells": [
+["№", "ФИО", "ИНН", "Должность", "Сумма"],
+["1", "Иванов И.И.", "770123456701", "Менеджер", "1000.00"],
+["2", "Петров П.П.", "770123456702", "Бухгалтер", "2000.00"],
+["3", "Сидоров С.С.", "770123456703", "Инженер", "1500.00"]
+],
+"html": null,
+"confidence": 0.94,
+"source": "table_extractor",
+"language": "ru"
+},
+{
+"page": 2,
+"block_id": "p2_b01",
+"type": "text",
+"bbox": [72.0, 50.0, 523.0, 90.0],
+"text": "Итого к выплате: 4500.00 руб.",
+"table_md": null,
+"table_cells": null,
+"html": null,
+"confidence": 0.97,
+"source": "ocr",
+"language": "ru"
+},
+{
+"page": 2,
+"block_id": "p2_b02",
+"type": "signature",
+"bbox": [72.0, 200.0, 300.0, 260.0],
+"text": "Главный бухгалтер ______________ / Смирнова А.В. /",
+"table_md": null,
+"table_cells": null,
+"html": null,
+"confidence": 0.68,
+"source": "ocr",
+"language": "ru"
+}
+]
+}

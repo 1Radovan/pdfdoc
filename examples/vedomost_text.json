@@ -1,0 +1,391 @@
+{
+  "file_name": "vedomost_text.pdf",
+  "file_hash": "407b0cefe130c3e0e83a899f59aa7a05c911e61b08be2cadd42966072c3368b7",
+  "total_pages": 2,
+  "pipeline_version": "0.1.0",
+  "processing_time_ms": 435,
+  "warnings": [
+    "page 1: table p1_b04 column 4 has 1 empty cell"
+  ],
+  "blocks": [
+    {
+      "page": 1,
+      "block_id": "p1_b01",
+      "type": "header",
+      "bbox": [
+        72.0,
+        57.53,
+        471.34,
+        73.02
+      ],
+      "text": "ВЕДОМОСТЬ начисления заработной платы за январь 2025 г.",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b02",
+      "type": "text",
+      "bbox": [
+        72.0,
+        100.2,
+        384.14,
+        112.38
+      ],
+      "text": "Организация: ООО \"Ромашка\", ИНН 7701234567, КПП 770101001",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b03",
+      "type": "text",
+      "bbox": [
+        72.0,
+        118.2,
+        397.04,
+        130.38
+      ],
+      "text": "Подразделение: бухгалтерия, табельный учёт ведётся по форме Т-12.",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b04",
+      "type": "table",
+      "bbox": [
+        72.0,
+        145.0,
+        523.0,
+        255.0
+      ],
+      "text": null,
+      "table_md": "| № | ФИО | ИНН | Должность | Сумма |\n|---|---|---|---|---|\n| 1 | Иванов И.И. | 770123456701 | Менеджер | 1000.00 |\n| 2 | Петров П.П. | 770123456702 | Бухгалтер | 2000.00 |\n| 3 | Сидоров С.С. | 770123456703 | Инженер | 1500.00 |\n| 4 | Козлов К.К. | 770123456704 |  | 0.00 |",
+      "table_cells": [
+        [
+          "№",
+          "ФИО",
+          "ИНН",
+          "Должность",
+          "Сумма"
+        ],
+        [
+          "1",
+          "Иванов И.И.",
+          "770123456701",
+          "Менеджер",
+          "1000.00"
+        ],
+        [
+          "2",
+          "Петров П.П.",
+          "770123456702",
+          "Бухгалтер",
+          "2000.00"
+        ],
+        [
+          "3",
+          "Сидоров С.С.",
+          "770123456703",
+          "Инженер",
+          "1500.00"
+        ],
+        [
+          "4",
+          "Козлов К.К.",
+          "770123456704",
+          "",
+          "0.00"
+        ]
+      ],
+      "html": "<table><tr><th>№</th><th>ФИО</th><th>ИНН</th><th>Должность</th><th>Сумма</th></tr><tr><td>1</td><td>Иванов И.И.</td><td>770123456701</td><td>Менеджер</td><td>1000.00</td></tr><tr><td>2</td><td>Петров П.П.</td><td>770123456702</td><td>Бухгалтер</td><td>2000.00</td></tr><tr><td>3</td><td>Сидоров С.С.</td><td>770123456703</td><td>Инженер</td><td>1500.00</td></tr><tr><td>4</td><td>Козлов К.К.</td><td>770123456704</td><td></td><td>0.00</td></tr></table>",
+      "confidence": 0.941,
+      "source": "table_extractor",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b05",
+      "type": "header",
+      "bbox": [
+        72.0,
+        289.31,
+        247.94,
+        302.59
+      ],
+      "text": "Таблица 2. Удержания по видам",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b06",
+      "type": "table",
+      "bbox": [
+        72.0,
+        310.0,
+        523.0,
+        398.0
+      ],
+      "text": null,
+      "table_md": "| Вид удержания | Период |  | Сумма |\n|---|---|---|---|\n| НДФЛ | январь | 2025 | 585.00 |\n|  | февраль | 2025 | 0.00 |\n| Алименты | январь | 2025 | 250.00 |",
+      "table_cells": [
+        [
+          "Вид удержания",
+          "Период",
+          "",
+          "Сумма"
+        ],
+        [
+          "НДФЛ",
+          "январь",
+          "2025",
+          "585.00"
+        ],
+        [
+          "",
+          "февраль",
+          "2025",
+          "0.00"
+        ],
+        [
+          "Алименты",
+          "январь",
+          "2025",
+          "250.00"
+        ]
+      ],
+      "html": "<table><tr><th>Вид удержания</th><th colspan=\"2\">Период</th><th>Сумма</th></tr><tr><td rowspan=\"2\">НДФЛ</td><td>январь</td><td>2025</td><td>585.00</td></tr><tr><td>февраль</td><td>2025</td><td>0.00</td></tr><tr><td>Алименты</td><td>январь</td><td>2025</td><td>250.00</td></tr></table>",
+      "confidence": 0.941,
+      "source": "table_extractor",
+      "language": "ru",
+      "table_spans": [
+        {
+          "row": 0,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 2
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "rowspan": 2,
+          "colspan": 1
+        }
+      ],
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b07",
+      "type": "list_item",
+      "bbox": [
+        72.0,
+        420.2,
+        358.98,
+        432.38
+      ],
+      "text": "1. Начисления произведены согласно штатному расписанию.",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b08",
+      "type": "list_item",
+      "bbox": [
+        72.0,
+        438.2,
+        332.95,
+        450.38
+      ],
+      "text": "2. Выплата производится не позднее 10 февраля 2025 г.",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 1,
+      "block_id": "p1_b09",
+      "type": "page_number",
+      "bbox": [
+        260.0,
+        801.98,
+        300.8,
+        811.94
+      ],
+      "text": "Стр. 1 из 2",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 2,
+      "block_id": "p2_b01",
+      "type": "text",
+      "bbox": [
+        72.0,
+        59.31,
+        226.07,
+        72.59
+      ],
+      "text": "Итого к выплате: 4500.00 руб.",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 2,
+      "block_id": "p2_b02",
+      "type": "signature",
+      "bbox": [
+        72.0,
+        220.2,
+        327.18,
+        232.38
+      ],
+      "text": "Главный бухгалтер ______________ / Смирнова А.В. /",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 2,
+      "block_id": "p2_b03",
+      "type": "signature",
+      "bbox": [
+        72.0,
+        260.2,
+        282.98,
+        272.38
+      ],
+      "text": "Руководитель ______________ / Орлов Д.Е. /",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    },
+    {
+      "page": 2,
+      "block_id": "p2_b04",
+      "type": "page_number",
+      "bbox": [
+        260.0,
+        801.98,
+        300.8,
+        811.94
+      ],
+      "text": "Стр. 2 из 2",
+      "table_md": null,
+      "table_cells": null,
+      "html": null,
+      "confidence": 0.99,
+      "source": "text_layer",
+      "language": "ru",
+      "table_spans": null,
+      "table_cell_confidence": null
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "width": 595.0,
+      "height": 842.0,
+      "rotation": 0,
+      "source": "text_layer",
+      "confidence": 0.979,
+      "skew_angle": null,
+      "orientation": null,
+      "block_ids": [
+        "p1_b01",
+        "p1_b02",
+        "p1_b03",
+        "p1_b04",
+        "p1_b05",
+        "p1_b06",
+        "p1_b07",
+        "p1_b08",
+        "p1_b09"
+      ],
+      "table_ids": [
+        "p1_b04",
+        "p1_b06"
+      ]
+    },
+    {
+      "page": 2,
+      "width": 595.0,
+      "height": 842.0,
+      "rotation": 0,
+      "source": "text_layer",
+      "confidence": 0.99,
+      "skew_angle": null,
+      "orientation": null,
+      "block_ids": [
+        "p2_b01",
+        "p2_b02",
+        "p2_b03",
+        "p2_b04"
+      ],
+      "table_ids": []
+    }
+  ],
+  "schema_version": "1.0"
+}
