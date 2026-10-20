@@ -8,19 +8,8 @@
 ```bash
 sudo apt-get install -y tesseract-ocr tesseract-ocr-rus tesseract-ocr-eng tesseract-ocr-osd
 pip install -r requirements.txt
-pip install -e /путь/к/pdfdoc        # чтобы `import pdfdoc` работал из любого проекта
+pip install -e /путь/к/pdfdoc
 ```
-
-## Что импортировать
-
-Всё импортируется из пакета `pdfdoc` (`pdfdoc/__init__.py` реэкспортирует функции из файлов ниже):
-
-| Файл | Что в нём | Зачем |
-|---|---|---|
-| `pdfdoc/pipeline.py` | `process_pdf`, `process_bytes`, `process_folder` | функции обработки, возвращают `doc` |
-| `pdfdoc/config.py` | `PipelineConfig` | настройки (папка для JSON, DPI, язык OCR, …) |
-| `pdfdoc/models.py` | `Document`, `Block`, `BlockType` | результат и работа с ним |
-| `pdfdoc/errors.py` | `PdfDocError`, `PdfOpenError`, `TesseractNotAvailableError` | исключения |
 
 ```python
 from pdfdoc import process_pdf, process_bytes, process_folder, PipelineConfig, Document, PdfDocError
@@ -39,7 +28,6 @@ doc = process_pdf("docs/file.pdf", PipelineConfig(output_dir="out")) # JSON в �
 Повторный вызов на том же файле берёт готовый JSON (если совпадают хеш файла и версия пайплайна).
 Пересчитать заново: `PipelineConfig(skip_existing=False)`.
 
-## Работа с `doc`
 
 ```python
 for t in doc.tables():                    # все таблицы (или doc.tables(page=1))
